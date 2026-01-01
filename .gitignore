@@ -11,3 +11,6 @@ result-*
 /ebin/
 /deps/
 test_glwav_erlang
+
+# Output file
+output.wav
