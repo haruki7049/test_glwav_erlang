@@ -2,4 +2,6 @@
 -export([main/1]).
 
 main(_Args) ->
-    io:format("HOGE~n").
+    Wave = {wave, p_c_m, 44100, 1, i16, []},
+    WaveBits = glwav:to_bit_array(Wave),
+    io:format("~p~n", [WaveBits]).
