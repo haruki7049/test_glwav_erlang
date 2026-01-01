@@ -43,8 +43,10 @@
           devShells.default = pkgs.mkShell {
             nativeBuildInputs = [
               # Erlang
-              pkgs.beam28Packages.erlang
-              pkgs.p7zip
+              pkgs.beam28Packages.erlang # Runtime
+              pkgs.erlang-language-platform # LSP
+              pkgs.efmt # Formatter
+              pkgs.p7zip # For creating escripts
             ];
           };
         };
