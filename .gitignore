@@ -5,8 +5,9 @@ result-*
 
 # Erlang
 /.erlang.mk/
-/*.d
-/*.dump
+*.d
+*.dump
+*.plt
 /ebin/
 /deps/
 test_glwav_erlang
